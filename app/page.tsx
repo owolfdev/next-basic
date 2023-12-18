@@ -1,6 +1,4 @@
-import Image from "next/image";
 import ReactMarkdown from "react-markdown";
-import gfm from "remark-gfm";
 
 export default function Home() {
   const markdown = `
@@ -8,7 +6,7 @@ export default function Home() {
 
   🌟 **Shadcn UI Elements**: The interface uses Shadcn UI components. It's designed to be responsive and user-friendly.
   
-  🔐 **Clerk Authentication**: The template includes Clerk for secure authentication. It ensures safe and reliable user sign-in experiences.
+  🔐 **Clerk Authentication**: The template includes Clerk for secure authentication. It ensures safe and reliable user sign-in experiences. Clerk authentication exists on the clerk branch only.
   
   🛠️ **Customizable Template**: This starter template is designed for customization. It can be adapted for personal projects or business applications.
   

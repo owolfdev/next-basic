@@ -5,6 +5,8 @@ import "./globals.css";
 import SiteHeader from "@/components/nav/site-header";
 import Footer from "@/components/nav/footer";
 
+import { ThemeProvider } from "@/components/theme-provider";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,11 +22,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <SiteHeader />
-        <main className="flex flex-col items-center justify-between p-24 min-h-[calc(100vh-12rem)]">
-          {children}
-        </main>
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SiteHeader />
+          <main className="flex flex-col items-center justify-between p-24 min-h-[calc(100vh-12rem)]">
+            {children}
+          </main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -4,6 +4,8 @@ import { ModeToggle } from "@/components/theme-toggle";
 // import AuthComponent from "@/components/nav/auth-component";
 // import NavComponent from "./nav-component";
 
+import { UserButton } from "@clerk/nextjs";
+
 function SiteHeader() {
   //   const ghostButtonVariant = buttonVariants({ variant: "ghost" });
   //   const outlineButtonVariant = buttonVariants({ variant: "outline" });
@@ -12,6 +14,7 @@ function SiteHeader() {
       <div className="sm:px-12 px-6 flex items-center h-16 space-x-4 sm:justify-between sm:space-x-0">
         <div className="flex items-center justify-end flex-1 space-x-4">
           <div className="flex gap-4 items-center">
+            <UserButton afterSignOutUrl="/" />
             <ModeToggle />
           </div>
         </div>

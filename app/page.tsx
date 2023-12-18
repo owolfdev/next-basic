@@ -5,7 +5,7 @@ export default function Home() {
     <div className="max-w-xl z-10 w-full items-center justify-between text-sm lg:flex">
       <div className="w-full flex justify-center items-center flex-col gap-6">
         <h1 className="text-5xl sm:text-6xl font-bold">Basic Next.js</h1>
-        <p>
+        <p className="text-base">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta
